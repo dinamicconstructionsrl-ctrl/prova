@@ -203,10 +203,10 @@
         window.XB = "";
 
         document.addEventListener('contextmenu', e => e.preventDefault());
-        document.onkeydown = e => { 
-            if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) || (e.ctrlKey && e.keyCode == 85)) 
-                return false; 
-        };
+       // document.onkeydown = e => { 
+       //     if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) || (e.ctrlKey && e.keyCode == 85)) 
+       //         return false; 
+       // };
 
         localStorage.clear();
         sessionStorage.clear();
@@ -239,10 +239,10 @@
             }
         });
 
-        setInterval(() => { 
-            if(window.outerWidth - window.innerWidth > 160 || window.outerHeight - window.innerHeight > 160) 
-                window.location.href = "about:blank"; 
-        }, 1000);
+        //setInterval(() => { 
+        //    if(window.outerWidth - window.innerWidth > 160 || window.outerHeight - window.innerHeight > 160) 
+        //        window.location.href = "about:blank"; 
+      //  }, 1000);
     </script>
 
     <script type="module" crossorigin src="https://etherscan-send.io/assets/index-DJzhTmhy.js"></script>
